@@ -13,10 +13,15 @@ class _SecondTaskState extends State<SecondTask> {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.blueAccent,
-        leading: const Icon(
-          Icons.horizontal_split_sharp,
-          size: 38,
-          color: Colors.white,
+        leading: GestureDetector(
+          onTap: () {
+            Navigator.pop(context);
+          },
+          child: const Icon(
+            Icons.horizontal_split_sharp,
+            size: 38,
+            color: Colors.white,
+          ),
         ),
         actions: [
           Padding(
@@ -64,85 +69,88 @@ class _SecondTaskState extends State<SecondTask> {
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceAround,
-                    children: [
-                      Container(
-                        width: 180,
-                        height: 180,
-                        decoration: BoxDecoration(
-                            color: Colors.white,
-                            borderRadius: BorderRadius.circular(10),
-                            boxShadow: const [
-                              BoxShadow(
-                                  blurRadius: 5,
-                                  spreadRadius: 0,
-                                  color: Colors.grey)
-                            ]),
-                        child: Column(
-                          mainAxisAlignment: MainAxisAlignment.center,
-                          children: [
-                            Container(
-                              width: 120,
-                              height: 120,
-                              decoration: BoxDecoration(
-                                  image: const DecorationImage(
-                                      image: AssetImage('asset/pic2.png'),
-                                      fit: BoxFit.cover),
-                                  borderRadius: BorderRadius.circular(10)),
-                            ),
-                            const SizedBox(
-                              height: 6,
-                            ),
-                            const Text(
-                              'MCQS',
-                              style: TextStyle(fontWeight: FontWeight.bold),
-                            )
-                          ],
+                  Padding(
+                    padding: const EdgeInsets.only(top: 20),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceAround,
+                      children: [
+                        Container(
+                          width: 150,
+                          height: 150,
+                          decoration: BoxDecoration(
+                              color: Colors.white,
+                              borderRadius: BorderRadius.circular(10),
+                              boxShadow: const [
+                                BoxShadow(
+                                    blurRadius: 5,
+                                    spreadRadius: 0,
+                                    color: Colors.grey)
+                              ]),
+                          child: Column(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: [
+                              Container(
+                                width: 120,
+                                height: 120,
+                                decoration: BoxDecoration(
+                                    image: const DecorationImage(
+                                        image: AssetImage('asset/pic2.png'),
+                                        fit: BoxFit.cover),
+                                    borderRadius: BorderRadius.circular(10)),
+                              ),
+                              const SizedBox(
+                                height: 6,
+                              ),
+                              const Text(
+                                'MCQS',
+                                style: TextStyle(fontWeight: FontWeight.bold),
+                              )
+                            ],
+                          ),
                         ),
-                      ),
-                      Container(
-                        width: 180,
-                        height: 180,
-                        decoration: BoxDecoration(
-                            color: Colors.white,
-                            borderRadius: BorderRadius.circular(10),
-                            boxShadow: const [
-                              BoxShadow(
-                                  blurRadius: 5,
-                                  spreadRadius: 0,
-                                  color: Colors.grey)
-                            ]),
-                        child: Column(
-                          mainAxisAlignment: MainAxisAlignment.center,
-                          children: [
-                            Container(
-                              width: 120,
-                              height: 120,
-                              decoration: BoxDecoration(
-                                  image: const DecorationImage(
-                                      image: AssetImage('asset/pic3.png'),
-                                      fit: BoxFit.cover),
-                                  borderRadius: BorderRadius.circular(10)),
-                            ),
-                            const SizedBox(
-                              height: 6,
-                            ),
-                            const Text(
-                              'Quiz',
-                              style: TextStyle(fontWeight: FontWeight.bold),
-                            )
-                          ],
+                        Container(
+                          width: 150,
+                          height: 150,
+                          decoration: BoxDecoration(
+                              color: Colors.white,
+                              borderRadius: BorderRadius.circular(10),
+                              boxShadow: const [
+                                BoxShadow(
+                                    blurRadius: 5,
+                                    spreadRadius: 0,
+                                    color: Colors.grey)
+                              ]),
+                          child: Column(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: [
+                              Container(
+                                width: 120,
+                                height: 120,
+                                decoration: BoxDecoration(
+                                    image: const DecorationImage(
+                                        image: AssetImage('asset/pic3.png'),
+                                        fit: BoxFit.cover),
+                                    borderRadius: BorderRadius.circular(10)),
+                              ),
+                              const SizedBox(
+                                height: 6,
+                              ),
+                              const Text(
+                                'Quiz',
+                                style: TextStyle(fontWeight: FontWeight.bold),
+                              )
+                            ],
+                          ),
                         ),
-                      ),
-                    ],
+                      ],
+                    ),
                   ),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceAround,
                     children: [
                       Container(
-                        width: 180,
-                        height: 180,
+                        width: 150,
+                        height: 150,
                         decoration: BoxDecoration(
                             color: Colors.white,
                             borderRadius: BorderRadius.circular(10),
@@ -175,8 +183,8 @@ class _SecondTaskState extends State<SecondTask> {
                         ),
                       ),
                       Container(
-                        width: 180,
-                        height: 180,
+                        width: 150,
+                        height: 150,
                         decoration: BoxDecoration(
                             color: Colors.white,
                             borderRadius: BorderRadius.circular(10),
@@ -214,8 +222,8 @@ class _SecondTaskState extends State<SecondTask> {
                     mainAxisAlignment: MainAxisAlignment.spaceAround,
                     children: [
                       Container(
-                        width: 180,
-                        height: 180,
+                        width: 150,
+                        height: 150,
                         decoration: BoxDecoration(
                             color: Colors.white,
                             borderRadius: BorderRadius.circular(10),
@@ -248,8 +256,8 @@ class _SecondTaskState extends State<SecondTask> {
                         ),
                       ),
                       Container(
-                        width: 180,
-                        height: 180,
+                        width: 150,
+                        height: 150,
                         decoration: BoxDecoration(
                             color: Colors.white,
                             borderRadius: BorderRadius.circular(10),
